@@ -73,14 +73,14 @@ const AvatarChart = props => {
   return <Grid container justify='space-around'>
     {Object.entries(answers).map(pair => {
       const [label, ppl] = pair
-      return <Group item>
+      return <Group item xs={12} sm>
         <Typography variant="h5" gutterBottom>
           {ppl.length}
         </Typography>
         <Typography variant="h6" gutterBottom>
           {label}
         </Typography>
-        <Grid container>
+        <Grid container justify='center'>
           {ppl.map(p => <AvatarContainer item>
             <Grid container direction='column' alignItems='center'>
               <Avatar className='avatar' alt={p} src="/static/images/avatar/1.jpg" />
@@ -108,19 +108,19 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg">
-    {data.map(dat => {
-      return <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Typography variant="h6" gutterBottom>{dat.question_title}</Typography>
-          <Typography variant="body1" paragraph>{dat.description_text}</Typography>
-          <AvatarChart answers={dat.answers} />
-        </Grid>
-      </Grid>
-    })}
+        {data.map(dat => {
+          return <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <Typography variant="h4" gutterBottom>{dat.question_title}</Typography>
+              <Typography variant="body1" paragraph>{dat.description_text}</Typography>
+              <AvatarChart answers={dat.answers} />
+            </Grid>
+          </Grid>
+        })}
 
-  </Container>
-  </ThemeProvider>
-    )
+      </Container>
+    </ThemeProvider>
+  )
 }
 
 export default App;
