@@ -10,7 +10,7 @@ const theme = createMuiTheme({
             'Noto Sans TC',
         ].join(','),
         h4: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
             fontWeight: 500
         }
     },
