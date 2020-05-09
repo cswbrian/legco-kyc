@@ -54,8 +54,29 @@ const groupAnswers = array => {
   })
 };
 
-const Group = styled(Grid)`
-  text-align: center;
+const Question = styled(Grid)`
+  margin-top: ${theme.spacing(2)}px;
+  margin-bottom: ${theme.spacing(2)}px;
+`
+
+const AvatarChartConatiner = styled(Grid)`
+  .group {
+    padding: ${theme.spacing(0.5)}px;
+    text-align: center;
+    .ppl-count {
+      color: ${theme.palette.primary.main};
+  }
+}
+
+
+${theme.breakpoints.up('sm')} {
+  .group {
+  }
+  .group:not(:last-child) {
+    border-right: 1px ${theme.palette.divider} solid;
+  }
+}
+
 `
 const AvatarContainer = styled(Grid)`
   .avatar {
@@ -70,11 +91,11 @@ const AvatarContainer = styled(Grid)`
 
 const AvatarChart = props => {
   const { answers } = props
-  return <Grid container justify='space-around'>
+  return <AvatarChartConatiner container justify='space-around'>
     {Object.entries(answers).map(pair => {
       const [label, ppl] = pair
-      return <Group item xs={12} sm>
-        <Typography variant="h5" gutterBottom>
+      return <Grid className='group' item xs={12} sm>
+        <Typography variant="h3" className='ppl-count'>
           {ppl.length}
         </Typography>
         <Typography variant="h6" gutterBottom>
@@ -88,9 +109,9 @@ const AvatarChart = props => {
             </Grid>
           </AvatarContainer>)}
         </Grid>
-      </Group>
+      </Grid>
     })}
-  </Grid>
+  </AvatarChartConatiner>
 }
 
 
@@ -109,13 +130,15 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg">
         {data.map(dat => {
-          return <Grid container spacing={3}>
+          return <Question container spacing={3}>
             <Grid item xs={12}>
-              <Typography variant="h4" gutterBottom>{dat.question_title}</Typography>
-              <Typography variant="body1" paragraph>{dat.description_text}</Typography>
+              <Container maxWidth="md">
+                <Typography variant="h4" gutterBottom>{dat.question_title}</Typography>
+                <Typography variant="body1" paragraph>{dat.description_text}</Typography>
+              </Container>
               <AvatarChart answers={dat.answers} />
             </Grid>
-          </Grid>
+          </Question>
         })}
 
       </Container>
