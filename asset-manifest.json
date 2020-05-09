@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/legco-kyc/static/css/main.ec8206ff.chunk.css",
-    "main.js": "/legco-kyc/static/js/main.f0cdfe24.chunk.js",
-    "main.js.map": "/legco-kyc/static/js/main.f0cdfe24.chunk.js.map",
+    "main.css": "/legco-kyc/static/css/main.68b89e97.chunk.css",
+    "main.js": "/legco-kyc/static/js/main.0a21152c.chunk.js",
+    "main.js.map": "/legco-kyc/static/js/main.0a21152c.chunk.js.map",
     "runtime-main.js": "/legco-kyc/static/js/runtime-main.3dd9cac7.js",
     "runtime-main.js.map": "/legco-kyc/static/js/runtime-main.3dd9cac7.js.map",
-    "static/js/2.d8deac26.chunk.js": "/legco-kyc/static/js/2.d8deac26.chunk.js",
-    "static/js/2.d8deac26.chunk.js.map": "/legco-kyc/static/js/2.d8deac26.chunk.js.map",
+    "static/js/2.5e185b9f.chunk.js": "/legco-kyc/static/js/2.5e185b9f.chunk.js",
+    "static/js/2.5e185b9f.chunk.js.map": "/legco-kyc/static/js/2.5e185b9f.chunk.js.map",
     "index.html": "/legco-kyc/index.html",
-    "precache-manifest.3e4006dd2e1582b1cd74391a20c47e3f.js": "/legco-kyc/precache-manifest.3e4006dd2e1582b1cd74391a20c47e3f.js",
+    "precache-manifest.2a2f5a203e6df75a8b440906a9625a24.js": "/legco-kyc/precache-manifest.2a2f5a203e6df75a8b440906a9625a24.js",
     "service-worker.js": "/legco-kyc/service-worker.js",
-    "static/css/main.ec8206ff.chunk.css.map": "/legco-kyc/static/css/main.ec8206ff.chunk.css.map",
-    "static/js/2.d8deac26.chunk.js.LICENSE.txt": "/legco-kyc/static/js/2.d8deac26.chunk.js.LICENSE.txt"
+    "static/css/main.68b89e97.chunk.css.map": "/legco-kyc/static/css/main.68b89e97.chunk.css.map",
+    "static/js/2.5e185b9f.chunk.js.LICENSE.txt": "/legco-kyc/static/js/2.5e185b9f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3dd9cac7.js",
-    "static/js/2.d8deac26.chunk.js",
-    "static/css/main.ec8206ff.chunk.css",
-    "static/js/main.f0cdfe24.chunk.js"
+    "static/js/2.5e185b9f.chunk.js",
+    "static/css/main.68b89e97.chunk.css",
+    "static/js/main.0a21152c.chunk.js"
   ]
 }
