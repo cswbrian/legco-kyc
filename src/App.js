@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import * as csv from "csvtojson";
 import theme from './themes'
 import { ThemeProvider } from '@material-ui/core/styles';
